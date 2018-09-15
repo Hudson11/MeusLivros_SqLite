@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -38,7 +39,14 @@ public class VisualizaActivity extends AppCompatActivity {
         db = new BancoHelper(this);
 
         livros = db.findAll();
+
         index = livros.size();
+        if(index == 0){
+            finish();
+            Toast.makeText(this, "Não há registros no banco", Toast.LENGTH_SHORT).show();
+            return;
+        }
+
         v = livros.get(0);
 
         setTextView(v);

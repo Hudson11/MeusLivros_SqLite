@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:id="@+id/constraintLayout"
     tools:context=".Activities.MainActivity">
 
     <Button
@@ -24,7 +25,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="27dp"
         android:layout_marginTop="54dp"
-        android:onClick="click1"
+        android:onClick="click2"
         android:text="@string/visualizar"
         app:layout_constraintStart_toStartOf="@+id/cadastrar"
         app:layout_constraintTop_toBottomOf="@+id/cadastrar"

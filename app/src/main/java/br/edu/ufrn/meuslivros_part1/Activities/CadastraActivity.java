@@ -1,6 +1,8 @@
 package br.edu.ufrn.meuslivros_part1.Activities;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.os.Parcelable;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
@@ -32,7 +34,6 @@ public class CadastraActivity extends AppCompatActivity {
         titulo = findViewById(R.id.titulo);
         ano = findViewById(R.id.ano);
         bar = findViewById(R.id.ratingBar);
-
     }
 
     public void save(View v){
@@ -45,16 +46,13 @@ public class CadastraActivity extends AppCompatActivity {
         bh.save(livro);
         Log.i("SALVOU", "Dado: " + y);
 
+        setResult(RESULT_OK);
         finish();
-
-        Snackbar snackbar = Snackbar.make((View) v.getParent(), "Livro Cadastrado com Sucesso", Snackbar.LENGTH_SHORT);
-        snackbar.show();
     }
 
     public void cancell(View v){
+        setResult(RESULT_CANCELED);
         finish();
-
-        Snackbar snackbar = Snackbar.make((View) v.getParent(), "Cancelou", Snackbar.LENGTH_SHORT);
-        snackbar.show();
     }
+
 }
