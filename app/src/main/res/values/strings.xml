@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name" translatable="false">MeusLivros_part1</string>
+    <string name="visualizar" translatable="false">Vializar Livros</string>
+    <string name="cadastrar" translatable="false">Cadastrar Novo Livro</string>
+    <string name="autor" translatable="false">Autor</string>
+    <string name="titulo" translatable="false">Título</string>
+    <string name="ano" translatable="false">Ano</string>
+    <string name="avalia" translatable="false"> Avalia </string>
+    <string name="salvar" translatable="false">Salvar</string>
+    <string name="cancelar" translatable="false">Cancelar</string>
+    <string name="proximo" translatable="false">Proximo</string>
+    <string name="anterior" translatable="false">Anterior</string>
+    <string name="nota" translatable="false">Nota</string>
+    <string name="cadastrou" translatable="false">Cadastrou</string>
+</resources>
